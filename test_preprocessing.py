@@ -6,7 +6,7 @@ import json
 DBNAME = 'rawdata'  # ! Необходимо задать соответствующие данные
 USERNAME = 'postgres'
 HOSTNAME = 'localhost'
-PASSWORD = '5300expres'
+PASSWORD = 'PASSWORD'
 
 try:
     conn = psycopg2.connect(f"dbname={DBNAME} user={USERNAME} host={HOSTNAME} password={PASSWORD}")

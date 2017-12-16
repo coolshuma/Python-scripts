@@ -8,7 +8,7 @@ import os
 DBNAME = 'rawdata'  # ! Необходимо задать соответствующие данные
 USERNAME = 'postgres' 
 HOSTNAME = 'localhost'
-PASSWORD = '5300expres'
+PASSWORD = 'PASSWORD'
 
 def create_table_for_raw_data():  # Создаем таблицу для сылых данных
     try:

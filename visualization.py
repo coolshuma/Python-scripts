@@ -7,10 +7,10 @@ import plotly.plotly as py
 import plotly.tools as tls
 import plotly.graph_objs as go
 
-CONSUMER_KEY = "vuTttJnVDKh3Pwx2QY8Xm8Npq"
-CONSUMER_SECRET = "FSkvbMs71bZp8Xu5fpuJWvCqexxmTPLrMgUh6BJOELm9Xkkd1C"
-ACCESS_KEY = "2600303065-7GWZTmS2721pTxbBdqh9jPK39kjVw01693d3Erv"
-ACCESS_SECRET = "3gMC0HyAfPA3TpJSXXZ6h2dZFnaddIMvFaKmRiQQqFuCP"
+CONSUMER_KEY = "KEY"
+CONSUMER_SECRET = "SECRET"
+ACCESS_KEY = "KEY"
+ACCESS_SECRET = "SECRET"
 
 try:
     consumer = oauth.Consumer(key=CONSUMER_KEY, secret=CONSUMER_SECRET)  # Логинимся в twitter api с помощью OAuth
@@ -19,8 +19,8 @@ try:
 except:
     print("OAuth error")
 
-plotly.tools.set_credentials_file(username='coolshuma', api_key='zqejELjKGdYv1MmqkUmF')
-token = "khf9jt6htc"  # Настраиваем stream в plotly
+plotly.tools.set_credentials_file(username='NAME', api_key='KEY')
+token = "TOKEN"  # Настраиваем stream в plotly
 stream_id = dict(token=token, maxpoints=3)
 try:
     s = py.Stream(stream_id=token)
